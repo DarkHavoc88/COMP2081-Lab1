@@ -86,7 +86,37 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+.masthead{
+  display: flex;
+  background-color: #b3d4fc;
+  height: 50vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+}
+.col-one > p:nth-child(2) > mark{
+  background-color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.col-one > p:nth-child(3) > mark{
+  background-color: white;
+  color: rgb(255, 68, 0);
+  font-size: 20px;
+  font-weight: bolder;
+}
+.row-two{
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+}
+.bottom > p{
+  text-align: center;
+  font-style: italic;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
