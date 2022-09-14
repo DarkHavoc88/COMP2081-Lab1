@@ -86,28 +86,84 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html{
+  background-image: linear-gradient(to bottom right, #ff2079, #04005e);
+  color: #ccc;
+}
+main{
+  margin: 1%;
+}
+h1,h2,h3,h4{
+  font-family: 'Indie Flower',sans-serif;
+}
+p,li{
+  font-family: 'Roboto',sans-serif;
+}
+h1{
+  font-size: 5.5em;
+}
+h2{
+  font-size: 2em;
+}
+h3{
+  font-size: 3em;
+}
+h4{
+  font-size: 1.5em;
+  text-align: center;
+}
 .masthead{
   display: flex;
-  background-color: #b3d4fc;
+  background-image: url(../img/Laptop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 50vh;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
+.masthead > div{
+  background-color: #000000b0;
+}
+.masthead > div > p{
+  font-family: 'Indie Flower',sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin: 1% 5%;
+}
 .container{
   display: grid;
   grid-template-columns: 33% 34% 33%;
 }
+.col-one, .col-two, .col-three{
+  padding: 20px;
+  border:solid rgb(51, 207, 235) 3px;
+  border-radius: 5%;
+}
+.col-one > h3, .col-two > h3, .col-three > h3{
+  text-align: center;
+  text-decoration: underline;
+}
 .col-one > p:nth-child(2) > mark{
-  background-color: white;
-  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(216, 106, 62);
+  font-size: 30px;
   font-weight: bolder;
 }
 .col-one > p:nth-child(3) > mark{
-  background-color: white;
-  color: rgb(255, 68, 0);
-  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(216, 106, 62);
+  font-size: 30px;
   font-weight: bolder;
+}
+.col-two{
+  margin: 1%;
+}
+.col-two > p > mark{
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(216, 106, 62);
+  font-size: 30px;
 }
 .row-two{
   display: grid;
